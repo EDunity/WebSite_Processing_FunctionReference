@@ -1,0 +1,1657 @@
+﻿
+<html>
+
+    <title>
+        Processing_FunctionReference
+    </title>
+    
+    <style>
+    
+    .body
+    {
+      padding: 0;
+      margin: 0;
+    }
+    
+    .div1
+    {
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+    
+    .div2
+    {
+        position: absolute; 
+        left: 215px; 
+        top: 40px; 
+    }
+    
+    .div3
+    {
+        position: relative;
+        left: 10px;
+        top: 0px;
+        width:auto;
+        height:900px;
+    }
+    
+    .div4
+    {
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+    
+    .div5
+    {
+        position: absolute;
+        left: 75px;
+        top: 53px;
+    }
+    
+    .div6
+    {
+        position: relative;
+        left: 10px;
+        top: 0px;
+        width:800px;
+        height:150px;
+    }
+    
+    .div7
+    {
+        position: absolute;
+        bottom: 0px;
+        margin: 0 auto;
+    }
+    
+    .img1
+    {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+    
+    .font1
+    {
+        font-size: 40px;
+    }
+    
+    .font2
+    {
+        font-size: 35px;
+    }
+    
+    .font3
+    {
+        font-size: 20px;
+    }
+    
+    .font4
+    {
+        font-size: 75px;
+    }
+    
+    .a1 
+    {
+      text-decoration: none;
+    }
+    
+    .p1
+    {
+      word-break: break-all;
+      display:inline;
+    }
+    
+    </style>
+    
+    <!-- 背景色設定 -->
+    <body class = "body" bgcolor="#dcdcdc" link="#4169e1" vlink="#4169e1" alink="#4169e1">
+    
+    </body>
+    
+    <a id="top"></a>
+    
+    <!-- タイトル -->
+    <div class="div1">
+        <img src="Image/Line2.png" height="200px" width="100%" alt="">
+            <div class="div2">
+                <font class = "font4" color="white" >
+                    <p class="p1">
+                    Processing Function Reference
+                    </p>
+                </font>
+            </div>
+        <img class="img1" src="Image/Logo.png" height="180px" width="180px" alt="">
+    </div>
+    
+    <!-- 目次 -->
+    <div class="div6">
+        <font class="font2" color="black">
+            [ 2D図形 ]
+        </font>
+        <br>
+        <font class="font3" color="black">
+            ・<a class="a1" href="#arc()">arc()</a>
+        </font>
+        <br>
+        <font class="font3" color="black">
+            ・<a class="a1" href="#circle()">circle()</a>
+        </font>
+        <br>
+        <font class="font3" color="black">
+            ・<a class="a1" href="#ellipse()">ellipse()</a>
+        </font>
+        <br>
+        <font class="font3" color="black">
+            ・<a class="a1" href="#line()">line()</a>
+        </font>
+        <br>
+        <font class="font3" color="black">
+            ・<a class="a1" href="#point()">point()</a>
+        </font>
+        <br>
+        <font class="font3" color="black">
+            ・<a class="a1" href="#quad()">quad()</a>
+        </font>
+        <br>
+        <font class="font3" color="black">
+            ・<a class="a1" href="#rect()">rect()</a>
+        </font>
+        <br>
+        <font class="font3" color="black">
+            ・<a class="a1" href="#square()">square()</a>
+        </font>
+        <br>
+        <font class="font3" color="black">
+            ・<a class="a1" href="#triangle()">triangle()</a>
+        </font>
+        <br>
+        <font class="font2" color="black">
+            [ 3D図形 ]
+        </font>
+        <br>
+        <font class="font3" color="black">
+            ・<a class="a1" href="#box()">box()</a>
+        </font>
+        <br>
+        <font class="font3" color="black">
+            ・<a class="a1" href="#sphere()">sphere()</a>
+        </font>
+        <br>
+        <font class="font3" color="black">
+            ・<a class="a1" href="#sphereDetail()">sphereDetail()</a>
+        </font>
+        <br>
+        <font class="font2" color="black">
+            [ 配色 ]
+        </font>
+        <br>
+        <font class="font3" color="black">
+            ・<a class="a1" href="#background()">background()</a>
+        </font>
+        <br>
+        <font class="font3" color="black">
+            ・<a class="a1" href="#clear()">clear()</a>
+        </font>
+        <br>
+        <font class="font3" color="black">
+            ・<a class="a1" href="#colorMode()">colorMode()</a>
+        </font>
+        <br>
+        <font class="font3" color="black">
+            ・<a class="a1" href="#fill()">fill()</a>
+        </font>
+        <br>
+        <font class="font3" color="black">
+            ・<a class="a1" href="#noFill()">noFill()</a>
+        </font>
+        <br>
+        <font class="font3" color="black">
+            ・<a class="a1" href="#noStroke()">noStroke()</a>
+        </font>
+        <br>
+        <font class="font3" color="black">
+            ・<a class="a1" href="#stroke()">stroke()</a>
+        </font>
+        <br>
+        <font class="font2" color="black">
+            [ 画像 ]
+        </font>
+        <br>
+        <font class="font3" color="black">
+            ・<a class="a1" href="#createImage()">createImage()</a>
+        </font>
+        <br>
+        <font class="font2" color="black">
+            [ 読み込みと表示 ]
+        </font>
+        <br>
+        <font class="font3" color="black">
+            ・<a class="a1" href="#image()">image()</a>
+        </font>
+        <br>
+        <font class="font3" color="black">
+            ・<a class="a1" href="#imageMode()">imageMode()</a>
+        </font>
+        <br>
+        <font class="font3" color="black">
+            ・<a class="a1" href="#loadImage()">loadImage()</a>
+        </font>
+        <br>
+        <font class="font3" color="black">
+            ・<a class="a1" href="#noTint()">noTint()</a>
+        </font>
+        <br>
+        <font class="font3" color="black">
+            ・<a class="a1" href="#requestImage()">requestImage()</a>
+        </font>
+        <br>
+        <font class="font3" color="black">
+            ・<a class="a1" href="#tint()">tint()</a>
+        </font>
+    </div>
+    
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <hr><br>
+    
+    <!-- 2D図形 -->
+    <!--#region -->
+    
+    <a id="arc()"></a>
+    <div class="div3">
+        <div class="div4">
+            <font class="font2" color="black">
+                <p class="p1">
+                    [ arc() ]
+                </p>
+            </font>
+            <br>
+            <font class="font3" color="black">
+                <p class="p1">
+                    名前
+                    <br><br>
+                    説明
+                    <br><br>
+                    構文
+                    <br><br>
+                    引数
+                    <br><br><br><br><br><br><br>
+                    関連
+                </p>
+            </font>
+        </div>
+        <div class="div5">
+            <font class="font3" color="black">
+                <p class="p1">
+                    アーク
+                    <br><br>
+                    円弧を描画します。 
+                    <br><br>
+                    arc(a, b, c, d, start, stop)
+                    <br><br>
+                    a　intまたはfloat: 弧の楕円のx座標<br>
+                    b　intまたはfloat: 弧の楕円のy座標<br>
+                    c　intまたはfloat: 弧の楕円の幅<br>
+                    d　intまたはfloat: 弧の楕円の高さ<br>
+                    start　intまたはfloat: 弧を開始する角度<br>
+                    stop　intまたはfloat: 弧を停止する角度
+                    <br><br>
+                    ellipse()<br>
+                    ellipseMode()<br>
+                    radians()<br>
+                    degrees()
+                </p>
+            </font>
+        </div>
+    </div>
+    <center>
+        <font class="font3" color="black">
+            <a class="a1" href="#top">→目次に戻る</a>
+        </font>
+    </center>
+    <hr>
+    
+    <a id="circle()"></a>
+    <div class="div3">
+        <div class="div4">
+            <font class="font2" color="black">
+                <p class="p1">
+                    [ circle() ]
+                </p>
+            </font>
+            <br>
+            <font class="font3" color="black">
+                <p class="p1">
+                    名前
+                    <br><br>
+                    説明
+                    <br><br>
+                    構文
+                    <br><br>
+                    引数
+                    <br><br><br><br>
+                    関連
+                </p>
+            </font>
+        </div>
+        <div class="div5">
+            <font class="font3" color="black">
+                <p class="p1">
+                    サークル
+                    <br><br>
+                    縁を描写します。
+                    <br><br>
+                    circle(x, y, extent)
+                    <br><br>	
+                    x　float: 円のx座標<br>
+                    y　float: 円のy座標<br>
+                    extent　float: デフォルトでの円の幅
+                    <br><br>
+                    ellipse()<br>
+                    ellipseMode()
+                </p>
+            </font>
+        </div>
+    </div>
+    <center>
+        <font class="font3" color="black">
+            <a class="a1" href="#top">→目次に戻る</a>
+        </font>
+    </center>
+    <hr>
+    
+    <a id="ellipse()"></a>
+    <div class="div3">
+        <div class="div4">
+            <font class="font2" color="black">
+                <p class="p1">
+                    [ ellipse() ]
+                </p>
+            </font>
+            <br>
+            <font class="font3" color="black">
+                <p class="p1">
+                    名前
+                    <br><br>
+                    説明
+                    <br><br>
+                    構文
+                    <br><br>
+                    引数
+                    <br><br><br><br><br>
+                    関連
+                </p>
+            </font>
+        </div>
+        <div class="div5">
+            <font class="font3" color="black">
+                <p class="p1">
+                    エリプス
+                    <br><br>
+                    楕円を描画します。
+                    <br><br>
+                    ellipse(a, b, c, d)
+                    <br><br>	
+                    a　float: 楕円のx座標<br>
+                    b　float: 楕円のy座標<br>
+                    c　float: デフォルトでの楕円の幅<br>
+                    d　float: デフォルトでの楕円の高さ
+                    <br><br>
+                    ellipseMode()<br>
+                    arc()
+                </p>
+            </font>
+        </div>
+    </div>
+    <center>
+        <font class="font3" color="black">
+            <a class="a1" href="#top">→目次に戻る</a>
+        </font>
+    </center>
+    <hr>
+    
+    <a id="line()"></a>
+    <div class="div3">
+        <div class="div4">
+            <font class="font2" color="black">
+                <p class="p1">
+                    [ line() ]
+                </p>
+            </font>
+            <br>
+            <font class="font3" color="black">
+                <p class="p1">
+                    名前
+                    <br><br>
+                    説明
+                    <br><br>
+                    構文
+                    <br><br><br>
+                    引数
+                    <br><br><br><br><br><br><br>
+                    関連
+                </p>
+            </font>
+        </div>
+        <div class="div5">
+            <font class="font3" color="black">
+                <p class="p1">
+                    ライン
+                    <br><br>
+                    線を描画します。
+                    <br><br>
+                    line(x1, y1, x2, y2)<br>
+                    line(x1, y1, z1, x2, y2, z2)
+                    <br><br>	
+                    x1　float: 最初の点のx座標<br>
+                    y1　float: 最初の点のy座標<br>
+                    x2　float: 2番目の点のx座標<br>
+                    y2　float: 2番目の点のy座標<br>
+                    z1　float: 最初の点のz座標<br>
+                    z2　float: 2番目の点のz座標
+                    <br><br>
+                    strokeWeight()<br>
+                    strokeJoin()<br>
+                    strokeCap()<br>
+                    beginShape()
+                </p>
+            </font>
+        </div>
+    </div>
+    <center>
+        <font class="font3" color="black">
+            <a class="a1" href="#top">→目次に戻る</a>
+        </font>
+    </center>
+    <hr>
+    
+    <a id="point()"></a>
+    <div class="div3">
+        <div class="div4">
+            <font class="font2" color="black">
+                <p class="p1">
+                    [ point() ]
+                </p>
+            </font>
+            <br>
+            <font class="font3" color="black">
+                <p class="p1">
+                    名前
+                    <br><br>
+                    説明
+                    <br><br>
+                    構文
+                    <br><br><br>
+                    引数
+                    <br><br><br><br>
+                    関連
+                </p>
+            </font>
+        </div>
+        <div class="div5">
+            <font class="font3" color="black">
+                <p class="p1">
+                    ポイント
+                    <br><br>
+                    点を描画します。
+                    <br><br>                	
+                    point(x, y)<br>  
+                    point(x, y, z)
+                    <br><br>	
+                    x　float: ポイントのx座標<br>
+                    y　float: ポイントのy座標<br>
+                    z　float: ポイントのz座標
+                    <br><br>
+                    stroke()
+                </p>
+            </font>
+        </div>
+    </div>
+    <center>
+        <font class="font3" color="black">
+            <a class="a1" href="#top">→目次に戻る</a>
+        </font>
+    </center>
+    <hr>
+    
+    <a id="quad()"></a>
+    <div class="div3">
+        <div class="div4">
+            <font class="font2" color="black">
+                <p class="p1">
+                    [ quad() ]
+                </p>
+            </font>
+            <br>
+            <font class="font3" color="black">
+                <p class="p1">
+                    名前
+                    <br><br>
+                    説明
+                    <br><br>
+                    構文
+                    <br><br>
+                    引数
+                    <br><br><br><br><br><br><br><br><br>
+                    関連
+                </p>
+            </font>
+        </div>
+        <div class="div5">
+            <font class="font3" color="black">
+                <p class="p1">
+                    クアッド
+                    <br><br>
+                    4辺の四角形を描画します。
+                    <br><br>                	
+                    quad(x1、y1、x2、y2、x3、y3、x4、y4)
+                    <br><br>	
+                    x1　float: 最初の頂点のx座標<br>
+                    y1　float: 最初の頂点のy座標<br>
+                    x2　float: 2番目の頂点のx座標<br>
+                    y2　float: 2番目の頂点のy座標<br>
+                    x3　float: 3番目の頂点のx座標<br>
+                    y3　float: 3番目の頂点のy座標<br>
+                    x4　float: 4番目の頂点のx座標<br>
+                    y4　float: 4番目の頂点のy座標
+                    <br><br>
+                    なし
+                </p>
+            </font>
+        </div>
+    </div>
+    <center>
+        <font class="font3" color="black">
+            <a class="a1" href="#top">→目次に戻る</a>
+        </font>
+    </center>
+    <hr>
+    
+    <a id="rect()"></a>
+    <div class="div3">
+        <div class="div4">
+            <font class="font2" color="black">
+                <p class="p1">
+                    [ rect() ]
+                </p>
+            </font>
+            <br>
+            <font class="font3" color="black">
+                <p class="p1">
+                    名前
+                    <br><br>
+                    説明
+                    <br><br>
+                    構文
+                    <br><br><br><br>
+                    引数
+                    <br><br><br><br><br><br><br><br><br><br>
+                    関連
+                </p>
+            </font>
+        </div>
+        <div class="div5">
+            <font class="font3" color="black">
+                <p class="p1">
+                    レクト
+                    <br><br>
+                    長方形を描画します。
+                    <br><br>             	
+                    rect(a, b, c, d)<br>
+                    rect(a, b, c, d, r)<br>
+                    rect(a, b, c, d, tl, tr, br, bl)
+                    <br><br>	
+                    a　float: 長方形のx座標<br>
+                    b　float: 長方形のy座標<br>
+                    c　float: 長方形の幅<br>
+                    d　float: 長方形の高さ<br>
+                    r　float: 4つの隅全ての半径<br>
+                    tl　float: 左上の隅の半径<br>
+                    tr　float: 右上の隅の半径<br>
+                    br　float: 右下の隅の半径<br>
+                    bl　float: 左下の隅の半径
+                    <br><br>
+                    rectMode()<br>
+                    quad()
+                </p>
+            </font>
+        </div>
+    </div>
+    <center>
+        <font class="font3" color="black">
+            <a class="a1" href="#top">→目次に戻る</a>
+        </font>
+    </center>
+    <hr>
+    
+    <a id="square()"></a>
+    <div class="div3">
+        <div class="div4">
+            <font class="font2" color="black">
+                <p class="p1">
+                    [ square() ]
+                </p>
+            </font>
+            <br>
+            <font class="font3" color="black">
+                <p class="p1">
+                    名前
+                    <br><br>
+                    説明
+                    <br><br>
+                    構文
+                    <br><br>
+                    引数
+                    <br><br><br><br>
+                    関連
+                </p>
+            </font>
+        </div>
+        <div class="div5">
+            <font class="font3" color="black">
+                <p class="p1">
+                    スクエアー
+                    <br><br>
+                    長方形を描画します。
+                    <br><br>             	
+                    square(x, y, extent)
+                    <br><br>	
+                    x　float: 正方形のx座標<br>
+                    y　float: 正方形のy座標<br>
+                    extent　float: 正方形の幅と高さ
+                    <br><br>
+                    rect()<br>
+                    rectMode()
+                </p>
+            </font>
+        </div>
+    </div>
+    <center>
+        <font class="font3" color="black">
+            <a class="a1" href="#top">→目次に戻る</a>
+        </font>
+    </center>
+    <hr>
+    
+    <a id="triangle()"></a>
+    <div class="div3">
+        <div class="div4">
+            <font class="font2" color="black">
+                <p class="p1">
+                    [ triangle() ]
+                </p>
+            </font>
+            <br>
+            <font class="font3" color="black">
+                <p class="p1">
+                    名前
+                    <br><br>
+                    説明
+                    <br><br>
+                    構文
+                    <br><br>
+                    引数
+                    <br><br><br><br><br><br><br>
+                    関連
+                </p>
+            </font>
+        </div>
+        <div class="div5">
+            <font class="font3" color="black">
+                <p class="p1">
+                    トライアングル
+                    <br><br>
+                    三角形を描画します。
+                    <br><br>             	
+                    triangle(x1, y1, x2, y2, x3, y3)
+                    <br><br>	
+                    x1　float: 最初の頂点のx座標<br>
+                    y1　float: 最初の頂点のy座標<br>
+                    x2　float: 2番目の頂点のx座標<br>
+                    y2　float: 2番目の頂点のy座標<br>
+                    x3　float: 3番目の頂点のx座標<br>
+                    y3　float: 3番目の頂点のy座標
+                    <br><br>
+                    beginShape()
+                </p>
+            </font>
+        </div>
+    </div>
+    <center>
+        <font class="font3" color="black">
+            <a class="a1" href="#top">→目次に戻る</a>
+        </font>
+    </center>
+    <hr>
+    
+    <!--#endregion -->
+    
+    <!-- 3D図形 -->
+    <!--#region -->
+    
+    <a id="box()"></a>
+    <div class="div3">
+        <div class="div4">
+            <font class="font2" color="black">
+                <p class="p1">
+                    [ box() ]
+                </p>
+            </font>
+            <br>
+            <font class="font3" color="black">
+                <p class="p1">
+                    名前
+                    <br><br>
+                    説明
+                    <br><br>
+                    構文
+                    <br><br><br>
+                    引数
+                    <br><br><br><br><br>
+                    関連
+                </p>
+            </font>
+        </div>
+        <div class="div5">
+            <font class="font3" color="black">
+                <p class="p1">
+                    ボックス
+                    <br><br>
+                    ボックスは突き出した長方形です。全ての面が等しいボックスは立方体です。
+                    <br><br>
+                    box(size)<br>
+                    box(w, h, d)
+                    <br><br>
+                    size　float: 全ての次元におけるボックスの次元<br>
+                    w　float: x次元のボックスの次元<br>
+                    h　float: y次元のボックスの次元<br>
+                    d　float: z次元のボックスの次元
+                    <br><br>
+                    sphere()
+                </p>
+            </font>
+        </div>
+    </div>
+    <center>
+        <font class="font3" color="black">
+            <a class="a1" href="#top">→目次に戻る</a>
+        </font>
+    </center>
+    <hr>
+    
+    <a id="sphere()"></a>
+    <div class="div3">
+        <div class="div4">
+            <font class="font2" color="black">
+                <p class="p1">
+                    [ sphere() ]
+                </p>
+            </font>
+            <br>
+            <font class="font3" color="black">
+                <p class="p1">
+                    名前
+                    <br><br>
+                    説明
+                    <br><br>
+                    構文
+                    <br><br>
+                    引数
+                    <br><br>
+                    関連
+                </p>
+            </font>
+        </div>
+        <div class="div5">
+            <font class="font3" color="black">
+                <p class="p1">
+                    スフェア
+                    <br><br>
+                    スフェアは、三角形から作られたボールです。
+                    <br><br>
+                    sphere(r)
+                    <br><br>
+                    r　float: 球の半径
+                    <br><br>
+                    sphereDetail()
+                </p>
+            </font>
+        </div>
+    </div>
+    <center>
+        <font class="font3" color="black">
+            <a class="a1" href="#top">→目次に戻る</a>
+        </font>
+    </center>
+    <hr>
+    
+    <a id="sphereDetail()"></a>
+    <div class="div3">
+        <div class="div4">
+            <font class="font2" color="black">
+                <p class="p1">
+                    [ sphereDetail() ]
+                </p>
+            </font>
+            <br>
+            <font class="font3" color="black">
+                <p class="p1">
+                    名前
+                    <br><br>
+                    説明
+                    <br><br>
+                    構文
+                    <br><br><br>
+                    引数
+                    <br><br><br><br>
+                    関連
+                </p>
+            </font>
+        </div>
+        <div class="div5">
+            <font class="font3" color="black">
+                <p class="p1">
+                    スフェアディテイル
+                    <br><br>
+                    球体のメッシュの頂点の数を調整します。
+                    <br><br>
+                    sphereDetail(res)<br>
+                    sphereDetail(ures、vres)
+                    <br><br>
+                    res　int: 全周の回転で使用されるセグメントの数<br>
+                    ures　int: 全周の回転で縦方向に使用されるセグメントの数<br>
+                    vres　int: 上から下に緯度的に使用されるセグメントの数
+                    <br><br>
+                    sphere()
+                </p>
+            </font>
+        </div>
+    </div>
+    <center>
+        <font class="font3" color="black">
+            <a class="a1" href="#top">→目次に戻る</a>
+        </font>
+    </center>
+    <hr>
+    
+    <!--#endregion -->
+    
+    <!-- 配色 -->
+    <!--#region -->
+    
+    <a id="background()"></a>
+    <div class="div3">
+        <div class="div4">
+            <font class="font2" color="black">
+                <p class="p1">
+                    [ background() ]
+                </p>
+            </font>
+            <br>
+            <font class="font3" color="black">
+                <p class="p1">
+                    名前
+                    <br><br>
+                    説明
+                    <br><br>
+                    構文
+                    <br><br><br><br><br><br><br><br>
+                    引数
+                    <br><br><br><br><br><br><br><br>
+                    関連
+                </p>
+            </font>
+        </div>
+        <div class="div5">
+            <font class="font3" color="black">
+                <p class="p1">
+                    バックグラウンド
+                    <br><br>
+                    ウィンドウの背景色を設定します。
+                    <br><br>
+                    background(rgb)<br>
+                    background(rgb, alpha)<br>
+                    background(gray)<br>
+                    background(gray, alpha)<br>
+                    background(v1, v2, v3)<br>
+                    background(v1, v2, v3, alpha)<br>
+                    background(image)
+                    <br><br>
+                    rgb　int: 色データ型の任意の値<br>
+                    alpha　float: 背景の不透明度<br>
+                    gray　float: 白と黒の間の値を指定します<br>
+                    v1　float: 赤または色相の値<br>
+                    v2　float: 緑または彩度の値<br>
+                    v3　float: 青または明るさの値<br>
+                    image　PImage: 	PImage：背景として設定するPImage
+                    <br><br>
+                    stroke()<br>
+                    fill()<br>
+                    tint()<br>
+                    colorMode()
+                </p>
+            </font>
+        </div>
+    </div>
+    <center>
+        <font class="font3" color="black">
+            <a class="a1" href="#top">→目次に戻る</a>
+        </font>
+    </center>
+    <hr>
+    
+    <a id="clear()"></a>
+    <div class="div3">
+        <div class="div4">
+            <font class="font2" color="black">
+                <p class="p1">
+                    [ clear() ]
+                </p>
+            </font>
+            <br>
+            <font class="font3" color="black">
+                <p class="p1">
+                    名前
+                    <br><br>
+                    説明
+                    <br><br>
+                    構文
+                    <br><br>
+                    引数
+                    <br><br>
+                    関連
+                </p>
+            </font>
+        </div>
+        <div class="div5">
+            <font class="font3" color="black">
+                <p class="p1">
+                    クリア
+                    <br><br>
+                    createGraphics()で作成されたグラフィックを透明にします。
+                    <br><br>
+                    clear()
+                    <br><br>
+                    なし
+                    <br><br>
+                    なし
+                </p>
+            </font>
+        </div>
+    </div>
+    <center>
+        <font class="font3" color="black">
+            <a class="a1" href="#top">→目次に戻る</a>
+        </font>
+    </center>
+    <hr>
+    
+    <a id="colorMode()"></a>
+    <div class="div3">
+        <div class="div4">
+            <font class="font2" color="black">
+                <p class="p1">
+                    [ colorMode() ]
+                </p>
+            </font>
+            <br>
+            <font class="font3" color="black">
+                <p class="p1">
+                    名前
+                    <br><br>
+                    説明
+                    <br><br>
+                    構文
+                    <br><br><br><br><br>
+                    引数
+                    <br><br><br><br><br><br><br>
+                    関連
+                </p>
+            </font>
+        </div>
+        <div class="div5">
+            <font class="font3" color="black">
+                <p class="p1">
+                    カラーモード
+                    <br><br>
+                    Processingがカラーデータを解釈する方法を変更します。
+                    <br><br>
+                    colorMode(mode)<br>
+                    colorMode(mode, max)<br>
+                    colorMode(mode, max1, max2, max3)<br>
+                    colorMode(mode, max1, max2, max3, maxA)
+                    <br><br>
+                    mode　float: RGBまたはHSPのいずれか<br>
+                    max　float: 全ての色要素の範囲<br>
+                    max1　float: 赤または色相の範囲<br>
+                    max2　float: 緑または彩度の範囲<br>
+                    max3　float: 青または明るさの範囲<br>
+                    maxA　float: アルファの範囲
+                    <br><br>
+                    background()<br>
+                    fill()<br>
+                    stroke()
+                </p>
+            </font>
+        </div>
+    </div>
+    <center>
+        <font class="font3" color="black">
+            <a class="a1" href="#top">→目次に戻る</a>
+        </font>
+    </center>
+    <hr>
+    
+    <a id="fill()"></a>
+    <div class="div3">
+        <div class="div4">
+            <font class="font2" color="black">
+                <p class="p1">
+                    [ fill() ]
+                </p>
+            </font>
+            <br>
+            <font class="font3" color="black">
+                <p class="p1">
+                    名前
+                    <br><br>
+                    説明
+                    <br><br>
+                    構文
+                    <br><br><br><br><br><br><br>
+                    引数
+                    <br><br><br><br><br><br><br>
+                    関連
+                </p>
+            </font>
+        </div>
+        <div class="div5">
+            <font class="font3" color="black">
+                <p class="p1">
+                    フィル
+                    <br><br>
+                    図形の塗り潰しに使用する色を設定します。
+                    <br><br>
+                    fill(rgb)<br>
+                    fill(rgb, alpha)<br>
+                    fill(gray)<br>
+                    fill(gray, alpha)<br>
+                    fill(v1, v2, v3)<br>
+                    fill(v1, v2, v3, alpha)
+                    <br><br>
+                    rgb　int: 色変数または16進数値<br>
+                    alpha float: 不透明度<br>
+                    gray float: 白と黒の間の値を指定する数値<br>
+                    v1　float: 赤または色相の値<br>
+                    v2　float: 緑または彩度の値<br>
+                    v3　float: 青または明るさの値
+                    <br><br>
+                    noFill()<br>
+                    stroke()<br>
+                    noStroke()<br>
+                    tint()<br>
+                    background()<br>
+                    colorMode()
+                </p>
+            </font>
+        </div>
+    </div>
+    <center>
+        <font class="font3" color="black">
+            <a class="a1" href="#top">→目次に戻る</a>
+        </font>
+    </center>
+    <hr>
+    
+    <a id="noFill()"></a>
+    <div class="div3">
+        <div class="div4">
+            <font class="font2" color="black">
+                <p class="p1">
+                    [ noFill() ]
+                </p>
+            </font>
+            <br>
+            <font class="font3" color="black">
+                <p class="p1">
+                    名前
+                    <br><br>
+                    説明
+                    <br><br>
+                    構文
+                    <br><br>
+                    引数
+                    <br><br>
+                    関連
+                </p>
+            </font>
+        </div>
+        <div class="div5">
+            <font class="font3" color="black">
+                <p class="p1">
+                    ノーフィル
+                    <br><br>
+                    図形の塗り潰しを無効にします。
+                    <br><br>
+                    noFill()
+                    <br><br>
+                    なし
+                    <br><br>
+                    fill()<br>
+                    stroke()<br>
+                    noStroke()
+                </p>
+            </font>
+        </div>
+    </div>
+    <center>
+        <font class="font3" color="black">
+            <a class="a1" href="#top">→目次に戻る</a>
+        </font>
+    </center>
+    <hr>
+    
+    <a id="noStroke()"></a>
+    <div class="div3">
+        <div class="div4">
+            <font class="font2" color="black">
+                <p class="p1">
+                    [ noStroke() ]
+                </p>
+            </font>
+            <br>
+            <font class="font3" color="black">
+                <p class="p1">
+                    名前
+                    <br><br>
+                    説明
+                    <br><br>
+                    構文
+                    <br><br>
+                    引数
+                    <br><br>
+                    関連
+                </p>
+            </font>
+        </div>
+        <div class="div5">
+            <font class="font3" color="black">
+                <p class="p1">
+                    ノーストローク
+                    <br><br>
+                    アウトラインの描写を無効にします。
+                    <br><br>
+                    noStroke()
+                    <br><br>
+                    なし
+                    <br><br>
+                    stroke()<br>
+                    fill()<br>
+                    noFill()
+                </p>
+            </font>
+        </div>
+    </div>
+    <center>
+        <font class="font3" color="black">
+            <a class="a1" href="#top">→目次に戻る</a>
+        </font>
+    </center>
+    <hr>
+    
+    <a id="stroke()"></a>
+    <div class="div3">
+        <div class="div4">
+            <font class="font2" color="black">
+                <p class="p1">
+                    [ stroke() ]
+                </p>
+            </font>
+            <br>
+            <font class="font3" color="black">
+                <p class="p1">
+                    名前
+                    <br><br>
+                    説明
+                    <br><br>
+                    構文
+                    <br><br><br><br><br><br><br><br>
+                    引数
+                    <br><br><br><br><br><br><br>
+                    関連
+                </p>
+            </font>
+        </div>
+        <div class="div5">
+            <font class="font3" color="black">
+                <p class="p1">
+                    ストローク
+                    <br><br>
+                    アウトラインの色を設定します。
+                    <br><br>
+                    stroke(rgb)<br>
+                    stroke(rgb, alpha)<br>
+                    stroke(gray)<br>
+                    stroke(gray, alpha)<br>
+                    stroke(v1, v2, v3)<br>
+                    stroke(v1, v2, v3, alpha)<br>
+                    <br><br>
+                    rgb　int: 16進数表記のカラー値<br>
+                    alpha　float: アウトラインの不透明度<br>
+                    gray　float: 白と黒の間の値を指定します<br>
+                    v1　float: 赤または色相の値<br>
+                    v2　float: 緑または彩度の値<br>
+                    v3　float: 青または明るさの値
+                    <br><br>
+                    noStroke()<br>
+                    strokeWeight()<br>
+                    strokeJoin()<br>
+                    strokeCap()<br>
+                    fill()<br>
+                    noFill()<br>
+                    tint()<br>
+                    background()<br>
+                    colorMode()
+                </p>
+            </font>
+        </div>
+    </div>
+    <center>
+        <font class="font3" color="black">
+            <a class="a1" href="#top">→目次に戻る</a>
+        </font>
+    </center>
+    <hr>
+    
+    <!--#endregion -->
+    
+    <!-- 画像 -->
+    <!--#region -->
+    
+    <a id="createImage()"></a>
+    <div class="div3">
+        <div class="div4">
+            <font class="font2" color="black">
+                <p class="p1">
+                    [ createImage() ]
+                </p>
+            </font>
+            <br>
+            <font class="font3" color="black">
+                <p class="p1">
+                    名前
+                    <br><br>
+                    説明
+                    <br><br>
+                    構文
+                    <br><br>
+                    引数
+                    <br><br><br><br>
+                    関連
+                </p>
+            </font>
+        </div>
+        <div class="div5">
+            <font class="font3" color="black">
+                <p class="p1">
+                    クリエイトイメージ
+                    <br><br>
+                    新しいPImageを作成します。
+                    <br><br>
+                    createImage(w, h, format)
+                    <br><br>
+                    w　int: ピクセル単位の幅<br>
+                    h　int: ピクセル単位の高さ<br>
+                    format　int: RGB、ARGB、ALPHAのいずれか
+                    <br><br>
+                    なし
+                </p>
+            </font>
+        </div>
+    </div>
+    <center>
+        <font class="font3" color="black">
+            <a class="a1" href="#top">→目次に戻る</a>
+        </font>
+    </center>
+    <hr>
+    
+    <!--#endregion -->
+    
+    <!-- 読み込みと表示 -->
+    <!--#region -->
+    
+    <a id="image()"></a>
+    <div class="div3">
+        <div class="div4">
+            <font class="font2" color="black">
+                <p class="p1">
+                    [ image() ]
+                </p>
+            </font>
+            <br>
+            <font class="font3" color="black">
+                <p class="p1">
+                    名前
+                    <br><br>
+                    説明
+                    <br><br>
+                    構文
+                    <br><br><br>
+                    引数
+                    <br><br><br><br><br><br>
+                    関連
+                </p>
+            </font>
+        </div>
+        <div class="div5">
+            <font class="font3" color="black">
+                <p class="p1">
+                    イメージ
+                    <br><br>
+                    表示画面に画像を描画します。
+                    <br><br>
+                    image(img, a, b)<br>
+                    image(img, a, b, c, d)
+                    <br><br>
+                    img　PImage: 表示する画像<br>
+                    a　float: 画像のx座標<br>
+                    b　float: 画像のy座標<br>
+                    c　float: 画像を表示する幅<br>
+                    d　float: 画像を表示する高さ
+                    <br><br>
+                    loadImage()<br>
+                    PImage<br>
+                    imageMode()<br>
+                    tint()<br>
+                    background()<br>
+                    alpha()
+                </p>
+            </font>
+        </div>
+    </div>
+    <center>
+        <font class="font3" color="black">
+            <a class="a1" href="#top">→目次に戻る</a>
+        </font>
+    </center>
+    <hr>
+    
+    <a id="imageMode()"></a>
+    <div class="div3">
+        <div class="div4">
+            <font class="font2" color="black">
+                <p class="p1">
+                    [ imageMode() ]
+                </p>
+            </font>
+            <br>
+            <font class="font3" color="black">
+                <p class="p1">
+                    名前
+                    <br><br>
+                    説明
+                    <br><br>
+                    構文
+                    <br><br>
+                    引数
+                    <br><br>
+                    関連
+                </p>
+            </font>
+        </div>
+        <div class="div5">
+            <font class="font3" color="black">
+                <p class="p1">
+                    イメージモード
+                    <br><br>
+                    画像が描画される場所を変更します。
+                    <br><br>
+                    imageMode(mode)
+                    <br><br>
+                    mode　int: CORNER、CORNERS、CENTERのいずれか
+                    <br><br>
+                    loadImage()<br>
+                    image()<br>
+                    background()<br>
+                </p>
+            </font>
+        </div>
+    </div>
+    <center>
+        <font class="font3" color="black">
+            <a class="a1" href="#top">→目次に戻る</a>
+        </font>
+    </center>
+    <hr>
+    
+    <a id="loadImage()"></a>
+    <div class="div3">
+        <div class="div4">
+            <font class="font2" color="black">
+                <p class="p1">
+                    [ loadImage() ]
+                </p>
+            </font>
+            <br>
+            <font class="font3" color="black">
+                <p class="p1">
+                    名前
+                    <br><br>
+                    説明
+                    <br><br>
+                    構文
+                    <br><br><br>
+                    引数
+                    <br><br><br>
+                    関連
+                </p>
+            </font>
+        </div>
+        <div class="div5">
+            <font class="font3" color="black">
+                <p class="p1">
+                    ロードイメージ
+                    <br><br>
+                    PImage型の変数に画像を読み込みます。
+                    <br><br>
+                    loadImage(filename)<br>
+                    loadImage(filename, extension)
+                    <br><br>
+                    filename　String: ロードするファイルの名前<br>
+                    extension　String: ロードする画像のタイプ
+                    <br><br>
+                    image()<br>
+                    imageMode()<br>
+                    background()
+                </p>
+            </font>
+        </div>
+    </div>
+    <center>
+        <font class="font3" color="black">
+            <a class="a1" href="#top">→目次に戻る</a>
+        </font>
+    </center>
+    <hr>
+
+    <a id="noTint()"></a>
+    <div class="div3">
+    <div class="div4">
+        <font class="font2" color="black">
+            <p class="p1">
+                [ noTint() ]
+            </p>
+        </font>
+        <br>
+        <font class="font3" color="black">
+            <p class="p1">
+                名前
+                <br><br>
+                説明
+                <br><br>
+                構文
+                <br><br>
+                引数
+                <br><br>
+                関連
+            </p>
+        </font>
+    </div>
+    <div class="div5">
+        <font class="font3" color="black">
+            <p class="p1">
+                ノーティント
+                <br><br>
+                画像を表示するための現在の塗りつぶし値を削除します。
+                <br><br>
+                noTint()
+                <br><br>
+                なし
+                <br><br>
+                tint()<br>
+                image()
+            </p>
+        </font>
+    </div>
+    </div>
+    <center>
+    <font class="font3" color="black">
+        <a class="a1" href="#top">→目次に戻る</a>
+    </font>
+    </center>
+    <hr>
+
+    
+    <a id="requestImage()"></a>
+    <div class="div3">
+        <div class="div4">
+            <font class="font2" color="black">
+                <p class="p1">
+                    [ requestImage() ]
+                </p>
+            </font>
+            <br>
+            <font class="font3" color="black">
+                <p class="p1">
+                    名前
+                    <br><br>
+                    説明
+                    <br><br>
+                    構文
+                    <br><br><br>
+                    引数
+                    <br><br><br>
+                    関連
+                </p>
+            </font>
+        </div>
+        <div class="div5">
+            <font class="font3" color="black">
+                <p class="p1">
+                    リクエストイメージ
+                    <br><br>
+                    別のスレッドで画像をロードします。
+                    <br><br>
+                    requestImage(filename)<br>
+                    requestImage(filename, extension)
+                    <br><br>
+                    filename　String: ロードするファイルの名前<br>
+                    extension　String: ロードする画像のタイプ
+                    <br><br>
+                    loadImage()
+                </p>
+            </font>
+        </div>
+    </div>
+    <center>
+        <font class="font3" color="black">
+            <a class="a1" href="#top">→目次に戻る</a>
+        </font>
+    </center>
+    <hr>
+    
+    <a id="tint()"></a>
+    <div class="div3">
+        <div class="div4">
+            <font class="font2" color="black">
+                <p class="p1">
+                    [ tint() ]
+                </p>
+            </font>
+            <br>
+            <font class="font3" color="black">
+                <p class="p1">
+                    名前
+                    <br><br>
+                    説明
+                    <br><br>
+                    構文
+                    <br><br><br><br><br><br><br>
+                    引数
+                    <br><br><br><br><br><br><br>
+                    関連
+                </p>
+            </font>
+        </div>
+        <div class="div5">
+            <font class="font3" color="black">
+                <p class="p1">
+                    ティント
+                    <br><br>
+                    画像を表示するための塗りつぶしの値を設定します。
+                    <br><br>
+                    tint(rgb)<br>
+                    tint(rgb, alpha)<br>
+                    tint(gray)<br>
+                    tint(gray, alpha)<br>
+                    tint(v1, v2, v3)<br>
+                    tint(v1, v2, v3, alpha)
+                    <br><br>
+                    rgb　int: 色データ型の任意の値<br>
+                    alpha　float: 背景の不透明度<br>
+                    gray　float: 白と黒の間の値を指定します<br>
+                    v1　float: 赤または色相の値<br>
+                    v2　float: 緑または彩度の値<br>
+                    v3　float: 青または明るさの値
+                    <br><br>
+                    noTint()<br>
+                    image()
+                </p>
+            </font>
+        </div>
+    </div>
+    <center>
+        <font class="font3" color="black">
+            <a class="a1" href="#top">→目次に戻る</a>
+        </font>
+    </center>
+    <hr>
+    
+    
+    <!--#endregion -->
+    
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <hr><br>
+    
+    </html>
